@@ -1,0 +1,251 @@
+@import url('/Portfolio/css/nullstyle.css');
+/*********************
+    PreSettings
+****************/
+
+.container {
+	display: flex;
+	max-width: 855px;
+	margin: 0 auto;
+	padding: 0;
+}
+$primary-color: #ff6464;
+$main-font: Heebo;
+
+button {
+	height: 47px;
+	width: 208px;
+	background-color: $primary-color;
+	color: white;
+	font-family: $main-font;
+	font-size: 16px;
+	font-weight: 500;
+	box-shadow: 0 1rem 3rem rgba($primary-color, 0.725);
+	border-radius: 5px;
+
+	&:hover {
+		background-color: #ce2a2a;
+		transition: 0.8s;
+	}
+}
+.header {
+	display: grid;
+	width: 100%;
+	height: 70px;
+	align-items: center;
+	top: 0;
+	left: 0;
+}
+.nav {
+	position: absolute;
+	right: 60px;
+
+	&-link {
+		text-decoration: none;
+		color: black;
+		font-family: $main-font;
+		font-weight: 500;
+		padding-right: 30px;
+		&:hover {
+			opacity: 0.7;
+			transition: 0.9s;
+		}
+	}
+}
+
+.items {
+	display: grid;
+	max-width: 50%;
+	margin-right: 115px;
+	margin: 180px 115px 100px 0;
+
+	&-title {
+		font-family: $main-font;
+		font-weight: 600;
+		font-size: 44px;
+		color: black;
+		margin-bottom: 40px;
+	}
+
+	&-info {
+		font-family: $main-font;
+		font-weight: regular;
+		font-size: 16px;
+		color: #21243d;
+		margin-bottom: 40px;
+	}
+
+	&-photo {
+		margin-top: 180px;
+		border-radius: 50%;
+		overflow: hidden;
+	}
+}
+
+#works {
+	background: #edf7fa;
+	padding-top: 30px;
+
+	& > .container > .item {
+		width: 100vw;
+		display: flex;
+		justify-content: space-between;
+		&-text {
+			font-family: $main-font;
+			font-size: 22px;
+			font-weight: regular;
+		}
+	}
+}
+.projects {
+	background: #edf7fa;
+	&-list {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+}
+
+.arrow {
+	font-size: 35px;
+	margin-top: 150px;
+	height: 40px;
+	transition: all 0.4s;
+	&:hover {
+		color: #0d6efd;
+		cursor: pointer;
+	}
+}
+.project {
+	min-width: 50%;
+	margin: 10px 20px 50px 0;
+	height: 340px;
+	background-color: white;
+	border-radius: 20px;
+	padding: 25px 0 0 0;
+}
+
+.item {
+	&-open {
+		display: flex;
+		justify-content: center;
+		font-family: $main-font;
+		font-weight: 600;
+		font-size: 24px;
+		color: black;
+	}
+
+	&-info {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		padding: 0 40px;
+		margin: 15px 0;
+	}
+
+	&-date {
+		font-family: $main-font;
+		font-weight: regular;
+		font-size: 14px;
+		color: black;
+	}
+
+	&-project-name {
+		font-family: $main-font;
+		font-weight: regular;
+		font-size: 14px;
+		color: black;
+	}
+
+	&-link {
+		font-size: 35px;
+		padding-right: 35px;
+		color: black;
+	}
+
+	&-copyright {
+		font-family: $main-font;
+		font-weight: regular;
+		font-size: 11px;
+		padding-left: 10px;
+		color: black;
+		margin-top: 15px;
+	}
+}
+.img-container {
+	display: flex;
+	justify-content: center;
+}
+.img-response {
+	display: block;
+	width: 300px;
+	height: 200px;
+	border: 2px grey solid;
+	border-radius: 40px;
+	margin: 10px 20px;
+}
+li {
+	display: inline-block;
+}
+.hidden {
+	display: none;
+}
+footer {
+	position: relative;
+	height: 130px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.inst:hover {
+	color: #d6249f;
+}
+.mail:hover {
+	color: red;
+}
+
+@media screen and (max-width: 1200px) {
+	.container {
+		max-width: 1140px;
+	}
+}
+@media screen and (max-width: 1199px) {
+	.container {
+		max-width: 960px;
+	}
+}
+@media screen and (max-width: 991px) {
+	.container {
+		max-width: 720px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.container {
+		max-width: 540px;
+	}
+}
+@media screen and (max-width: 575px) {
+	.container {
+		width: 100%;
+		padding: 0 15px;
+	}
+	* {
+		flex-wrap: wrap;
+	}
+
+	.items {
+		width: 100%;
+		margin-bottom: 50px;
+		margin-top: 50px;
+		zoom: 0.9;
+	}
+	.project-GitHub__items {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.project-GitHub {
+		background: #edf7fa;
+		min-height: 100%;
+	}
+}
